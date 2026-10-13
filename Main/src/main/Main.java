@@ -50,7 +50,7 @@ public class Main {
 			System.out.println("--Si algun elemento o recurso de la nave llega a 0 pierdes.\n");
 			
 			sel1=sc.nextInt();
-			
+			activo=true;
 			switch (sel1) {
 			case 1:
 				
@@ -85,7 +85,7 @@ public class Main {
 					if(estado[0]<=0 || estado[1]<=0 || estado[2]<=0 || estado[3]<=0 || estado[4]<=0) {
 						System.out.println("\n--- ESTADISTICAS FINALES ---\n");	
 						carga();
-						ven.venus_estado(turno);	
+						luna.Luna_estado(turno);	
 						System.out.println("\n--- HAS PERDIDO LA MISION :( ---\n");
 						activo=false;
 						carga();
